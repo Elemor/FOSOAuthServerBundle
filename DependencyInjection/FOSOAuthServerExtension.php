@@ -76,7 +76,7 @@ class FOSOAuthServerExtension extends Extension
         // TODO: change it when bumping the requirement to Symfony 2.1
         if ('mongodb' === $config['db_driver']) {
             if (null === $config['model_manager_name']) {
-                $container->setAlias('fos_oauth_server.document_manager', new Alias('doctrine.odm.mongodb.document_manager', false));
+                $container->setAlias('fos_oauth_server.document_manager', new Alias('doctrine_mongodb.odm.document_manager', false));
             } else {
                 $container->setAlias('fos_oauth_server.document_manager', new Alias(
                     sprintf('doctrine.odm.%s_mongodb.document_manager',
