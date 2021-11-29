@@ -1,5 +1,5 @@
 {
-    "name": "klapaudius/oauth-server-bundle",
+    "name": "friendsofsymfony/oauth-server-bundle",
     "type": "symfony-bundle",
     "description": "Symfony OAuth Server Bundle",
     "keywords": ["oauth", "oauth2", "server"],
